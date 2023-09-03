@@ -1,3 +1,4 @@
+## 1st code snippet conceptualizing a [non-MVP] PoC on how Parsel2Lean-like LLMs [Aider [Meta]GPT-4 and/or Code Llama2] can be used to implement and validate complex GFT algorithms
 ## 1st-Parsel2Lean-LLMs-Hi-Decompositions-GFTs-w-Aider[Meta]GPT-4.py
 
 ## c/o: https://arxiv.org/abs/2212.10561
@@ -243,5 +244,3 @@ def genetic_algorithm(X_train, y_train, X_test, y_test, n_rules, n_generations, 
 best_gft, best_score = genetic_algorithm(X_train, y_train, X_test, y_test, n_rules, n_generations, n_pop, mutation_rate, crossover_rate)
 print(f"Best GFT found by genetic algorithm: {best_gft}“)
 print(f"Best accuracy score achieved by genetic algorithm: {best_score}”)
-	
-## this code snippet showcased how Parsel can be used to implement and validate complex GFT algorithms using Aider [Meta]GPT-4 and Code Llama2
