@@ -1,0 +1,10 @@
+name: oidc
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A Python Pulumi program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/pulumi/examples/blob/master/azure-py-oidc-provider-pulumi-cloud/README.md
