@@ -1,0 +1,65 @@
+name: azure-yaml-aks-managed-identity
+runtime: yaml
+description: A minimal Azure Native Pulumi YAML program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/pulumi/examples/blob/master/azure-yaml-aks-managed-identity/README.md
+outputs:
+  # Export the primary key of the Storage Account
+  kubeconfig:
+    fn::fromBase64: ${adminCredentials.kubeconfigs[0].value}
+resources:
+  # Create an AKS Cluster
+  cluster:
+    properties:
+      agentPoolProfiles:
+        - count: 1
+          mode: System
+          name: agentpool
+          osDiskSizeGB: 30
+          osType: Linux
+          type: VirtualMachineScaleSets
+          vmSize: Standard_A2_v2
+      dnsPrefix: dns-prefix
+      enableRBAC: true
+      identity:
+        type: UserAssigned
+        userAssignedIdentities:
+          - ${identity.id}
+      kubernetesVersion: 1.26.3
+      linuxProfile:
+        adminUsername: aksuser
+        ssh:
+          publicKeys:
+            - keyData: ${privateKey.publicKeyOpenssh}
+      resourceGroupName: ${resourceGroup.name}
+    type: azure-native:containerservice:ManagedCluster
+  identity:
+    properties:
+      resourceGroupName: ${resourceGroup.name}
+    type: azure-native:managedidentity:UserAssignedIdentity
+  # Create a private key for ssh access
+  privateKey:
+    properties:
+      algorithm: RSA
+      rsaBits: 4096
+    type: tls:PrivateKey
+  # Create an Azure Resource Group
+  resourceGroup:
+    type: azure-native:resources:ResourceGroup
+  # Assign a role to the managed identity
+  roleAssignment:
+    properties:
+      principalId: ${identity.principalId}
+      principalType: ServicePrincipal
+      # contributor role
+      # https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor
+      roleDefinitionId: /providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c
+      scope: ${resourceGroup.id}
+    type: azure-native:authorization:RoleAssignment
+variables:
+  adminCredentials:
+    fn::azure-native:containerservice:listManagedClusterAdminCredentials:
+      resourceGroupName: ${resourceGroup.name}
+      resourceName: ${cluster.name}
