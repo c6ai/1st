@@ -1,0 +1,59 @@
+@startuml
+
+class Wallet {
+    +Public Key
+    +Private Key
+}
+
+class DID {
+    +Decentralized Identifier
+}
+
+class SSI {
+    +Self-Sovereign Identity
+}
+
+class VerifiableCredential {
+    +Credential Data
+    +Issuer
+    +Holder
+    +Verifier
+}
+
+class Issuer {
+}
+
+class Holder {
+}
+
+class Verifier {
+}
+
+Wallet "1" -- "n" DID : contains >
+DID "n" -- "1" SSI : part of >
+SSI "1" -- "n" VerifiableCredential : issues >
+VerifiableCredential "1" -- "1" Issuer : issued by >
+VerifiableCredential "1" -- "1" Holder : held by >
+VerifiableCredential "1" -- "1" Verifier : verified by >
+
+note right of Wallet
+  Wallets can store DIDs and
+  Verifiable Credentials (VCs).
+end note
+
+note right of DID
+  DIDs enable user-controlled
+  verification and privacy.
+end note
+
+note right of SSI
+  SSI empowers individuals with
+  control over their identity.
+end note
+
+note right of VerifiableCredential
+  VCs allow selective disclosure
+  and preserve privacy.
+end note
+
+@enduml
