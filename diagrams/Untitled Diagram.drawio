@@ -1,9 +1,101 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T14:37:12.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.0.7" etag="KblQR8juWSMF_sFRBtLi" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T14:41:26.264Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="vtI9Gs5GSrNATDbCXB-C" version="24.0.7" type="github">
   <diagram name="Page-1" id="Xo1gjVz9K3jSi7nFIskZ">
-    <mxGraphModel>
+    <mxGraphModel dx="2003" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="CCZpoREJYiulROn_cgSd-1" value="A" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28.666665649414064;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="68" y="20" width="203" height="71.66666564941406" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-2" value="í ½í¹‹ Constituent VC-Holder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-1">
+          <mxGeometry y="28.666665649414064" width="203" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-3" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CCZpoREJYiulROn_cgSd-1">
+          <mxGeometry y="57.666665649414064" width="203" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-4" value="B" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26.857145036969865;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="168" width="210" height="93.85714503696987" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-5" value="í ½í´ Custodial/Guardianship" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-4">
+          <mxGeometry y="26.857145036969865" width="210" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-6" value="Self-Attested SSI Wallet" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-4">
+          <mxGeometry y="53.85714503696987" width="210" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CCZpoREJYiulROn_cgSd-4">
+          <mxGeometry y="80.85714503696987" width="210" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-8" value="C" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26.857145036969865;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="303" y="338" width="217" height="93.85714503696987" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-9" value="í ½í´ Verification-as-a-Service" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-8">
+          <mxGeometry y="26.857145036969865" width="217" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-10" value="Authenticator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-8">
+          <mxGeometry y="53.85714503696987" width="217" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-11" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CCZpoREJYiulROn_cgSd-8">
+          <mxGeometry y="80.85714503696987" width="217" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-12" value="D" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28.666665649414064;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="144" y="509" width="293" height="71.66666564941406" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-13" value="í ½í·ï¸ Revocation/Issuance Keycloak SaaS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-12">
+          <mxGeometry y="28.666665649414064" width="293" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CCZpoREJYiulROn_cgSd-12">
+          <mxGeometry y="57.666665649414064" width="293" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-15" value="E" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28.666665649414064;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="68" y="657" width="264" height="71.66666564941406" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-16" value="í ½í³‹ Zero-Trust Registry Service DLT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CCZpoREJYiulROn_cgSd-15">
+          <mxGeometry y="28.666665649414064" width="264" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CCZpoREJYiulROn_cgSd-15">
+          <mxGeometry y="57.666665649414064" width="264" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-18" value="&quot;Holds and manages credentials&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.5001357318145301;exitY=0.9958333015441895;entryX=0.49775025503976006;entryY=-1.869949640012255e-8;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-1" target="CCZpoREJYiulROn_cgSd-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-19" value="&quot;Requests verification&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.9977709270658948;exitY=0.8625062112624328;entryX=0.49947481990409887;entryY=0.0032680361878638176;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-4" target="CCZpoREJYiulROn_cgSd-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-20" value="&quot;Manages credential status&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.49775025503976006;exitY=1.0000000560984892;entryX=0.277686012760468;entryY=-0.0041664838790893555;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-4" target="CCZpoREJYiulROn_cgSd-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-21" value="&quot;Registers credentials&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.07022608880671848;exitY=1.0000000560984892;entryX=0.13145832916027014;entryY=-0.004166507720947265;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-4" target="CCZpoREJYiulROn_cgSd-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="304" />
+              <mxPoint x="20" y="623" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-22" value="&quot;Verifies credentials&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.49947481990409887;exitY=1.0032681109858494;entryX=0.7220190707806209;entryY=-0.0041664838790893555;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-8" target="CCZpoREJYiulROn_cgSd-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CCZpoREJYiulROn_cgSd-23" value="&quot;Updates credential status on&quot;" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.4998525417705445;exitY=0.9916668176651001;entryX=0.6837259830635142;entryY=-0.004166507720947265;rounded=0;" edge="1" parent="1" source="CCZpoREJYiulROn_cgSd-12" target="CCZpoREJYiulROn_cgSd-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="623" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
